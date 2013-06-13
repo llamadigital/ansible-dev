@@ -1,6 +1,7 @@
 ## My Ansible PLaybooks for Dev
 
-Clone this is to a tasks directory then configure the project.
+Install ansible and virtualbox. Clone this is to a tasks directory then configure the project.
+Then run vagrant up ...
 
 ## Example Vagrantfile
 
