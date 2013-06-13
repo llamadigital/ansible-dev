@@ -5,7 +5,11 @@
 
   - name: create app database user
     sudo_user: postgres
-    action: postgresql_user db={{name}} user={{name}} password={{password}} priv=ALL
+    action: postgresql_user db={{name}}{{item}} user={{name}} password={{password}} priv=ALL
+    with_items:
+     - ""
+     - _development
+     - _test
 
   - name: add database user privilege
     sudo_user: postgres
