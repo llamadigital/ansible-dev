@@ -1,0 +1,12 @@
+---
+  - name: create app database
+    sudo_user: postgres
+    action: postgresql_db db={{name}}
+
+  - name: create app database user
+    sudo_user: postgres
+    action: postgresql_user db={{name}} user={{name}} password={{password}} priv=ALL
+
+  - name: add database user privilege
+    sudo_user: postgres
+    action: postgresql_user user={{name}} role_attr_flags=SUPERUSER,CREATEDB
