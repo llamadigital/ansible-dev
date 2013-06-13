@@ -1,6 +1,6 @@
-= My Ansible PLaybooks for Dev =
+## My Ansible PLaybooks for Dev
 
-= Example Vagrantfile =
+## Example Vagrantfile
 
     Vagrant::Config.run do |config|
       config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210-nocm.box'
@@ -18,7 +18,7 @@
       config.vm.provision :shell, :path => 'tasks/install.sh'
     end
 
-= Example playbook.yml =
+## Example playbook.yml
 
     ---
      - hosts: vagrant
@@ -34,7 +34,7 @@
     
      - include: tasks/phantomjs.yml
 
-= Example vagrant_host =
+## Example vagrant_host
 
     [vagrant]
     192.168.69.70
