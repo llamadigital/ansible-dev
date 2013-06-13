@@ -1,7 +1,11 @@
-## My Ansible PLaybooks for Dev
+## My Ansible Playbooks for Dev
 
-Install ansible and virtualbox. Clone this is to a tasks directory then configure the project.
-Then run vagrant up ...
+1. Install ansible and virtualbox. 
+2. Clone this is to a tasks directory then configure the project.
+3. Then run vagrant up ...
+
+This is not the best practice dir structure as recommended by ansible, but it is
+all I need for my dev boxes at the moment.
 
 ## Example Vagrantfile
 
