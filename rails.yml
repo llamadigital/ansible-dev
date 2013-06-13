@@ -10,3 +10,4 @@
       - libsqlite3-dev
       - libzmq-dev
       - libaspell-dev
+      - nodejs
