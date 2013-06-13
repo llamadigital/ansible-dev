@@ -1,5 +1,7 @@
 ## My Ansible PLaybooks for Dev
 
+Clone this is to a tasks directory then configure the project.
+
 ## Example Vagrantfile
 
     Vagrant::Config.run do |config|
