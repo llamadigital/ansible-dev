@@ -1,7 +1,11 @@
 ---
-  - name: create app database
+  - name: create app databases
     sudo_user: postgres
-    action: postgresql_db db={{name}}
+    action: postgresql_db db={{name}}{{item}}
+    with_items:
+     - ""
+     - _development
+     - _test
 
   - name: create app database user
     sudo_user: postgres
