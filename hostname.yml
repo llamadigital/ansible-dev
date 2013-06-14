@@ -1,0 +1,9 @@
+---
+  - name: set hostname
+    shell: hostname {{name}}
+  - name: set hostname file
+    shell: echo "{{name}}" > /etc/hostname
+  - name: set hosts file
+    lineinfile: dest=/etc/hosts regexp='^127\.0\.1\.1' line='127.0.1.1 {{name}}' owner=root group=root mode=0644
+  - name: reload hostname service
+    shell: /etc/init.d/hostname reload
