@@ -48,5 +48,5 @@ all I need for my dev boxes at the moment.
     
 ## TODO
 
-1) set locale and timezone of the servers
-2) turn on query logging on the databases (for dev)
+  1) set locale and timezone of the servers
+  2) turn on query logging on the databases (for dev)
