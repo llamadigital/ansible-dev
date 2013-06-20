@@ -45,3 +45,8 @@ all I need for my dev boxes at the moment.
 
     [vagrant]
     192.168.69.70
+    
+## TODO
+
+1) set locale and timezone of the servers
+2) turn on query logging on the databases (for dev)
