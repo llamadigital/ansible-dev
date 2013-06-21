@@ -4,3 +4,6 @@
     with_items:
       - llvm-3.2-dev
       - clang-3.2
+      
+# git clone https://github.com/kripken/emscripten.git
+# git checkout master
