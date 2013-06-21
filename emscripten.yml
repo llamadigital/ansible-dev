@@ -2,8 +2,13 @@
   - name: install packages
     apt: name={{item}} state=latest update_cache=yes
     with_items:
-      - llvm-3.2-dev
-      - clang-3.2
+      - llvm
+      - clang
+      - llvm-3.2-*
+      - clang-3.2-*
       
 # git clone https://github.com/kripken/emscripten.git
 # git checkout master
+
+# ./emcc --help
+# set llvm_root to /usr/bin in ~/.em..
