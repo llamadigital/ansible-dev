@@ -10,8 +10,8 @@ all I need for my dev boxes at the moment.
 ## Example Vagrantfile
 
     Vagrant::Config.run do |config|
-      config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210-nocm.box'
-      config.vm.box = 'ubuntu-server-12042-x64-vbox4210-nocm'
+      config.vm.box_url = 'http://cloud-images.ubuntu.com/vagrant/raring/current/raring-server-cloudimg-amd64-vagrant-disk1.box'
+      config.vm.box = 'raring-server-cloudimg-amd64-vagrant-disk1'
       config.vm.network :hostonly, '192.168.1.1'
       config.vm.share_folder 'source', '/home/vagrant/source', '../..', :nfs => true
       config.vm.share_folder 'ssh', '/home/vagrant/ssh', '~/.ssh', :create => true
