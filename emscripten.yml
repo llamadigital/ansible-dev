@@ -1,0 +1,6 @@
+---
+  - name: install packages
+    apt: name={{item}} state=latest update_cache=yes
+    with_items:
+      - llvm-3.2-dev
+      - clang-3.2
