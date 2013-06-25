@@ -54,7 +54,7 @@ all I need for my dev boxes at the moment.
 ## Example vagrant_host
 
     [vagrant]
-    192.168.69.70
+    192.168.1.1
     
 ## TODO
 
