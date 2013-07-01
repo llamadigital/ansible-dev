@@ -10,15 +10,16 @@
   - name: install ruby packages
     apt: name={{item}} state=latest update_cache=yes
     with_items:
-      - ruby2.0
-      - ruby2.0-dev
+      - {{version}}
+      - {{version}}-dev
       - ruby-switch
   
-  - name: switch to ruby2.0
-    shell: ruby-switch --set ruby2.0
+  - name: switch to {{version}}
+    shell: ruby-switch --set {{version}}
 
   - name: install bundler
     gem: name=bundler state=latest
 
   - name: quick ugly fix for https://github.com/bundler/bundler/issues/2343
     file: path=/var/lib/gems/2.0.0/build_info owner=root group=root mode=0777 state=directory
+    when: version == "ruby2.0"
