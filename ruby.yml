@@ -10,8 +10,8 @@
   - name: install ruby packages
     apt: name={{item}} state=latest update_cache=yes
     with_items:
-      - {{version}}
-      - {{version}}-dev
+      - "{{version}}"
+      - "{{version}}-dev"
       - ruby-switch
   
   - name: switch to {{version}}
