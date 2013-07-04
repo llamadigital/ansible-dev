@@ -5,6 +5,7 @@
       - build-essential
       - vim
       - git
+      - git-annex
       - tig
       - ranger
       - htop
